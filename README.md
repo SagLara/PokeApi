@@ -1,5 +1,9 @@
 # PokeApi
 
+Este proyecto se realiza con el objetivo de probar e indagar las posibilidades que se tienen en Angular para consumir un API. 
+
+El proyecto esta basado en este video: [Pokedex con Angular Material](https://www.youtube.com/watch?v=pslB3D2muv4)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
 
 ## Development server
