@@ -1,0 +1,19 @@
+<mat-card class="card">
+    <mat-card-header>
+        <img mat-card-avatar src="{{pokemonImg}}" alt="avatar pokemon">
+        <mat-card-title> {{pokemon.name}} </mat-card-title>
+        <mat-card-subtitle>{{pokemon.id}}</mat-card-subtitle>
+    </mat-card-header>
+
+    <img mat-card-image src="{{pokemonImg}}" alt="Photo of a Shiba Inu">
+
+    <mat-card-content>
+        <mat-chip-list aria-label="Fish selection">
+            <mat-chip *ngFor="let type of pokemonType" color="primary" selected> Tipo: {{type}}</mat-chip>
+            <mat-chip *ngFor="let abi of pokemonAbi" color="warn" selected>Habilidad: {{abi}}</mat-chip>
+            <mat-chip color="accent" selected>Alto: {{pokemon.height}}</mat-chip>
+            <mat-chip color="accent" selected>Ancho: {{pokemon.weight}}</mat-chip>
+        </mat-chip-list>
+
+    </mat-card-content>
+</mat-card>

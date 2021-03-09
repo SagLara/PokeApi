@@ -1,0 +1,74 @@
+@import "../../../assets/styles/variables.scss";
+.container {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+table {
+    min-width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.mat-header-cell {
+    position: sticky;
+    top: 0;
+    /* Don't forget this, required for the stickiness */
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.4);
+    padding: 0.25rem;
+    text-align: center;
+    color: $black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.mat-cell:first-letter {
+    text-transform: uppercase;
+}
+
+.mat-row:hover {
+    cursor: pointer;
+    box-shadow: inset 1px 1px 1px 1px rgba(17, 17, 17, 0.411);
+}
+
+.mat-row:nth-child(even) {
+    background-color: $white;
+}
+
+.mat-row:nth-child(odd) {
+    background-color: $red;
+    & .mat-cell {
+        color: $white;
+    }
+}
+
+::placeholder,
+ ::-ms-input-placeholder {
+    color: $white;
+}
+
+.mat-form-field {
+    font-size: 14px;
+    width: 20%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+::ng-deep.mat-form-field-label {
+    color: $white !important;
+    margin: auto;
+}
+
+::ng-deep.mat-form-field-underline {
+    background-color: $white !important;
+}
+
+::ng-deep.mat-form-field-ripple {
+    background-color: $red !important;
+}
+
+::ng-deep.mat-paginator {
+    width: 80%;
+    margin: auto;
+}
